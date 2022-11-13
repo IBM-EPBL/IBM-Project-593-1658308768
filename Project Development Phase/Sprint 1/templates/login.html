@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Plasma donor</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 40px;padding-bottom: 800px;color: white;">Welcome to Plasma Donor Application!</h1>
+    <div class="main" style="position:absolute ;">
+        <h4 style="padding-left: 50px;">{{msg}}</h4>
+        <input type="checkbox" id="chk" aria-hidden="true">
+
+            <div class="signup">
+                <form action = "{{ url_for('register') }}" method = "POST" >
+                    <label for="chk" aria-hidden="true" style="color:black ;">Sign up</label>
+
+                    <input type="text" name="username" placeholder="Full name" required="">
+                    <input type="email" name="email" placeholder="Email" required="">
+                    <input type="password" name="password" placeholder="Password" required="">
+                    <button>Sign up</button>
+                </form>
+            </div>
+
+            <div class="login">
+                <form action = "{{ url_for('login') }}" method = "POST">
+                    <label for="chk" aria-hidden="true">Click here to  &nbsp<u>Login</u></label>
+                    <input type="email" name="email" placeholder="Email" required="">
+                    <input type="password" name="password" placeholder="Password" required="">
+                    <button>Login</button>
+                </form>
+            </div>
+    </div>
+</body>
+</html>
+</body>
+</html>
+
