@@ -53,7 +53,7 @@ def register():
     
     return render_template('login.html', msg="Hurry! your details saved successfully...Please login using your details")
 
-@app.route('/plasmareq',methods = ['POST', 'GET'])
+@app.route('/plasmarequest',methods = ['POST', 'GET'])
 def plasmarequest():
   if request.method == 'POST':
 
