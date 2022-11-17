@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en"  dir="ltr">
+<head>
+
+    <title>Plasma Donor Application</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style2.css')}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+
+<body>
+      <div class="main">
+        <div class="navbar">
+            <div class="menu">
+                <ul>
+                  <li><a href="/">HOME</a></li>
+                  <li><a href="{{url_for("about")}}">ABOUT</a></li>
+                  <li><a href="{{url_for("reques")}}">REQUEST</a></li>
+                  <li><a href="{{url_for("donor")}}">DONATE</a></li>
+                  <li><a href="{{url_for("loginn")}}">LOGOUT</a></li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type To text">
+                <a href="#"> <button class="btn">Search</button></a>
+            </div>
+        </div>
+     </div>
+     <div style="padding-top:50px;padding-left:150px;"><img src="/static/about2.jpg"></div>
+     <script>
+        window.watsonAssistantChatOptions = {
+        integrationID: "c6c6cb8a-ca0d-40a9-a4d2-aac1a4df0830", // The ID of this integration.
+        region: "eu-gb", // The region your integration is hosted in.
+        serviceInstanceID: "58dc3a94-c5c7-455d-9843-65c292d9e45c", // The ID of your service instance.
+        onLoad: function(instance) { instance.render(); }
+      };
+      setTimeout(function(){
+        const t=document.createElement('script');
+        t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+        document.head.appendChild(t);
+      });
+      </script>
+</body>
+</html>
+     

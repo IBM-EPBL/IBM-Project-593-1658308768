@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en"  dir="ltr">
+<head>
+
+    <title>Plasma Donor Application</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style2.css')}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   
+    <style>
+      table {
+        margin-top: 100px;
+        margin-left: 100px;
+        margin-right: 100px;
+        background:linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+
+      }
+      table td {
+        padding: 50px;
+      }
+      p{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+    </style>
+
+
+</head>
+<body1>
+  <header>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="menu">
+              <ul>
+                <li><a href="/">HOME</a></li>
+                <li><a href="{{url_for("about")}}">ABOUT</a></li>
+                <li><a href="{{url_for("reques")}}">REQUEST</a></li>
+                <li><a href="{{url_for("donor")}}">DONATE</a></li>
+                <li><a href="{{url_for("loginn")}}">LOGIN</a></li>
+              </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type To text">
+                <a href="#"> <button class="btn">Search</button></a>
+            </div>
+
+        </div> 
+    </header>
+    <body>
+      <h2>Nearest Plasma Donation Centre!!!</h2>
+    <table>
+      <tr>
+        <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1002595.3093129274!2d76.1478140473635!3d11.009493400000013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859740d746dc7%3A0xb6de5c010a2634e1!2sSwami%20Vivekananda%20Blood%20Centre!5e0!3m2!1sen!2sin!4v1668428135008!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </td>
+        <td style="color:white"><p>Swami Vivekananda Blood Centre,94, 1st Floor, S.G.Rajatathinam Hospital, Vivekananda Rd, Ram Nagar, Coimbatore, Tamil Nadu 641009</p>     
+      </tr>
+      <tr>
+        <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1002595.3093129274!2d76.1478140473635!3d11.009493400000013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85774f715dfd7%3A0x264bbd179d0b6e30!2sGOLDEN%20BLOOD%20DONORS-COIMBATORE%20TEAM!5e0!3m2!1sen!2sin!4v1668428193182!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </td>
+       <td style="color:white"><p>GOLDEN BLOOD DONORS-COIMBATORE TEAM,No.9/B vikas layout, annanagar, Peelamedu, Coimbatore, Tamil Nadu 641004      </p>  </td>    
+    </tr>
+      <tr>
+        <td style="color:white"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1002595.3093129274!2d76.1478140473635!3d11.009493400000013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba858ee42e1ea75%3A0xe7136174441f33b1!2sIndian%20Red%20Cross%20Society!5e0!3m2!1sen!2sin!4v1668428252815!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </td>
+       <td style="color:white">          <p>Indian Red Cross Society,2XH2+77X, Near Petrol Bunk, Cheran Nagar, Koundampalayam, Coimbatore, Tamil Nadu 641030</p>
+       </td>
+    </tr>
+      <tr>
+        <td>        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116959.76329064439!2d77.69858643159829!3d11.297836144871189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba96ff1453d69a3%3A0x297c39d0fe456801!2sTamilnadu%20Voluntary%20Blood%20Bank%20and%20Research%20Centre!5e0!3m2!1sen!2sin!4v1668428338570!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </td>
+     <td style="color:white"> <p>Tamilnadu Voluntary Blood Bank and Research Centre, Bus Stand, 003 V.C.T.V . ROAD,Veerapatra Street Balaji Residency Building ( IDBI Bank Back Side), Near by, Erode, Tamil Nadu 638003</p></td>
+     </tr>
+      <tr>
+        <td>        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125277.04533942296!2d77.18854210583662!3d11.120254341549355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba90693b08f4869%3A0x54e7f3ee16d26d56!2sRevathy%20Medical%20Centre%20Blood%20Bank!5e0!3m2!1sen!2sin!4v1668428425262!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </td>
+        <td style="color:white"><p>Revathy Medical Centre Blood Bank, Avinashi - Tiruppur Rd, Kumar Nagar, Valayankadu South, Valagan, West, Tiruppur, Tamil Nadu 614603</p>        </td>
+        </tr>
+      <tr>
+        <td>        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125277.04533942296!2d77.18854210583662!3d11.120254341549355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba907be22440159%3A0x6f658bf67ecf40d!2sSri%20Sai%20Eratha%20Parisodanai%20Maiyam!5e0!3m2!1sen!2sin!4v1668428486084!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </td>
+        <td style="color:white"><p>Sri Sai Eratha Parisodanai Maiyam, 39W2+WFQ, Aranmanai Pudur, Tiruppur, Tamil Nadu 641604</p></td>
+    </tr>
+    </table>
+
+
+
+        
+         
+        
+  </body>
+  </html>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js">
+ 
+    
+    </script>
+    
+</body1>
+</html>

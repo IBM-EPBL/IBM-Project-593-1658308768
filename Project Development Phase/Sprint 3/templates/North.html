@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en"  dir="ltr">
+<head>
+
+    <title>Plasma Donor Application</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style2.css')}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   
+    
+    <style>
+      
+      table {
+        margin-top: 100px;
+        margin-left: 100px;
+        margin-right: 100px;
+        background:linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+        text-decoration-color: white;
+      }
+      table td {
+        padding: 50px;
+      }
+    </style>
+
+</head>
+<body1 >
+  <header>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="menu">
+              <ul>
+                <li><a href="/">HOME</a></li>
+                <li><a href="{{url_for("about")}}">ABOUT</a></li>
+                <li><a href="{{url_for("reques")}}">REQUEST</a></li>
+                <li><a href="{{url_for("donor")}}">DONATE</a></li>
+                <li><a href="{{url_for("loginn")}}">LOGIN</a></li>
+              </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type To text">
+                <a href="#"> <button class="btn">Search</button></a>
+            </div>
+
+        </div> 
+    </header>
+        
+        <table class="one">
+          <tr><h2>Nearest Plasma Donation Centre!!!</h2></tr>
+          <tr>
+            <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d161850.75723254704!2d80.12338952584659!3d13.044166078065723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526585b92e04b7%3A0x75f086ca71abc4d1!2sChennai%20Blood%20Centre-%20Plasma%20blood%20bank%2CSingle%20Donor%20Platelet%20Centre!5e0!3m2!1sen!2sin!4v1668429143701!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </td>
+            <td style="color: white">Chennai Blood Centre- Plasma blood bank,Single Donor Platelet Centre, 70, 42/T1&T2 3rd Floor, Sindhoor Shopping Complex 5th Street, 2nd St, X Block, Anna Nagar, Chennai, Tamil Nadu 600040</td>
+          </tr>
+          <tr>
+            <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248842.05120153548!2d79.96449967584223!3d12.961800500000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5260cd65998487%3A0xb65b41197ee7daae!2sMIOT%20Hospitals%20Blood%20Bank!5e0!3m2!1sen!2sin!4v1668429197156!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </td>
+            <td style="color:white">MIOT Hospitals Blood Bank, 112, Mount Poonamallee Rd, Sathya Nagar, Manapakkam, Chennai, Tamil Nadu 600089</td>
+          </tr>
+          <tr>
+            <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248842.05120153548!2d79.96449967584223!3d12.961800500000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52675d4c7c139d%3A0xf5d36b50e6964dba!2sThe%20Tamil%20Nadu%20Dr.%20Mgr%20Medical%20University%20Blood%20Bank!5e0!3m2!1sen!2sin!4v1668429242644!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </td>
+            <td style="color:white">The Tamil Nadu Dr. Mgr Medical University Blood Bank, X6X5+XG7, 13th St, Mosque Colony, Maduvinkarai, Adyar, Chennai, Tamil Nadu 600032</td>
+          </tr>
+          <tr>
+            <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248842.05120153548!2d79.96449967584223!3d12.961800500000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52675c14ce29f7%3A0x11856ac3a10d1b6b!2sAnytimeblood%20donors!5e0!3m2!1sen!2sin!4v1668429282795!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </td>
+            <td style="color:white">Anytimeblood donors, 37F8+J29, Langs Garden Rd, Komaleeswaranpet, Chintadripet, Chennai, Tamil Nadu 600002</td>
+          </tr>
+          <tr>
+            <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248842.05120153548!2d79.96449967584223!3d12.961800500000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52663d4b1c7481%3A0x5a381949341df9bb!2sGovernment%20Royapettah%20Hospital%20Blood%20Bank!5e0!3m2!1sen!2sin!4v1668429322830!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </td>
+            <td style="color:white">Government Royapettah Hospital Blood Bank, No 1, Westcott Rd, Royapettah, Chennai, Tamil Nadu 600014</td>
+          </tr>
+          <tr>
+            <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124468.02462866632!2d79.00312532095765!3d12.867430633712713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad3ebd00000001%3A0x2e2a8b74ec4ee6a9!2sSri%20Narayani%20Hospital%20And%20Research%20Centre%20Blood%20Bank!5e0!3m2!1sen!2sin!4v1668429447122!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>     
+         </td>
+            <td style="color:white">Sri Narayani Hospital And Research Centre Blood Bank, Sripuram, Thirumalaikodi, Vellore, Tamil Nadu 632055</td>
+          </tr>
+        </table>
+   
+           
+    </body>
+
+  </html>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js">
+ 
+    
+    </script>
+    
+</body1>
+</html>

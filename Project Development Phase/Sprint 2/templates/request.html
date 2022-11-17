@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en"  dir="ltr">
+<head>
+
+    <title>plasma seeker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style1.css')}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+     <style>
+          button{
+    width: 60%;
+    height: 40px;
+    margin: 10px auto;
+    justify-content: center;
+    display: block;
+    color: #fff;
+    background: #5743eb;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: .2s ease-in;
+    cursor: pointer;
+    }
+    button:hover{
+    background: #5743eb;
+    }
+     </style>
+    
+
+
+</head>
+<body1>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="menu">
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="{{url_for("about")}}">ABOUT</a></li>
+                    <li><a href="{{url_for("reques")}}">REQUEST</a></li>
+                    <li><a href="{{url_for("donor")}}">DONATE</a></li>
+                    <li><a href="{{url_for("loginn")}}">LOGOUT</a></li>
+                  </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type To text">
+                <a href="#"> <button class="btn">Search</button></a>
+            </div>
+
+        </div> 
+        <br>
+
+        <div class="plasmareq">
+          <h1 style="color:rgb(7, 6, 13);font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif" align="center">PLASMA SEEKER</h1>
+          <br>
+         
+          <form id="form" action = "{{ url_for('plasmarequest') }}" method = "POST">
+       
+            
+              <div class="form-control">
+                  <label for="name" id="label-name">
+                      FULL NAME
+                  </label>
+       
+                  
+                  <input type="text"
+                         name="name"
+                         placeholder="Enter your name" />
+              </div>
+        
+              <div class="form-control">
+                  <label for="email" id="label-email">
+                      EMAIL ID
+                  </label>
+       
+                 
+                  <input type="email"
+                         name="email"
+                         placeholder="Enter your email" />
+              </div>
+        
+              <div class="form-control">
+                  <label for="phone" id="label-age">
+                      PHONE NUMBER
+                  </label>
+       
+                 
+                  <input type="text"
+                         name="phone"
+                         placeholder="Enter your phone number" />
+              </div>
+              <div class="form-control">
+                <label for="bgrp" id="label-bgrp">
+                    BLOOD GROUP
+                </label>
+     
+                
+                <input type="text"
+                       name="bloodgroup"
+                       placeholder="Enter your blood group" />
+            </div>
+            <div class="form-control">
+                <label for="date">
+                    DATE
+                </label>
+     
+               
+                <input type="date" name="date" id="date"> 
+
+            </div>
+        
+              
+              <div class="form-control">
+                  <label for="address">
+                      ADDRESS
+                  </label>
+       
+                 
+                  <textarea name="address" id="address"
+                      placeholder="Enter your address here">
+                  </textarea>
+              </div>
+
+              <div class="form-control">
+                <label for="address">
+                    DISTRICT
+                </label>
+     
+                
+                <input type="text" name="district" id="dist"
+                    placeholder="Enter your district here">
+            </div>
+
+            <div class="form-control">
+                <label for="address">
+                    STATE
+                </label>
+     
+                
+                <input type="text" name="state" id="state"
+                    placeholder="Enter your state here">
+            </div>
+
+            <div class="form-control">
+                <label for="age" id="label-age">
+                    AGE
+                </label>
+     
+                
+                <input type="text"
+                       name="age"
+                       placeholder="Enter your age" />
+            </div>
+        
+              
+              <button>SUBMIT</button>
+              </form>
+
+
+
+
+            </div>
+       
+        
+    
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js">
+        
+    </script>
+    
+</body1>
+</html>
