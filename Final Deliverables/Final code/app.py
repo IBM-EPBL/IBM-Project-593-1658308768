@@ -98,8 +98,6 @@ def plasmarequest():
         sg = SendGridAPIClient("API")
         response = sg.send(message)
         print(response.status_code, response.body)
-
-
     sendgrid_emails()
     if district=='chennai' or district =='vellore' or district == 'thiruvallur' or district=='kanchipuram':
       return render_template('North.html', msg="Data saved successfuly")
