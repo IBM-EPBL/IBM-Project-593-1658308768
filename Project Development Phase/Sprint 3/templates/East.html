@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en"  dir="ltr">
+<head>
+
+    <title>Plasma Donor Application</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style2.css')}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   
+    
+    <style>
+      table {
+        margin-top: 100px;
+        margin-left: 100px;
+        margin-right: 100px;
+        background:linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+
+      }
+      table td {
+        padding: 50px;
+      }
+    </style>
+
+</head>
+<body1 >
+  <header>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="menu">
+              <ul>
+                <li><a href="/">HOME</a></li>
+                <li><a href="{{url_for("about")}}">ABOUT</a></li>
+                <li><a href="{{url_for("reques")}}">REQUEST</a></li>
+                <li><a href="{{url_for("donor")}}">DONATE</a></li>
+                <li><a href="{{url_for("loginn")}}">LOGIN</a></li>
+              </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type To text">
+                <a href="#"> <button class="btn">Search</button></a>
+            </div>
+
+        </div> 
+    </header>
+    <h2>Nearest Plasma Donation Centre!!!</h2>
+    <table>
+      <tr>
+        <td> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d501613.4884284702!2d78.28957957030521!3d10.822377600000012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baaf5b89c8951a1%3A0xef27c115504c529a!2sUyir%20Thuli%20Blood%20Bank!5e0!3m2!1sen!2sin!4v1668428625372!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </td>
+        <td><p style="color:white">Uyir Thuli Blood Bank, D-45 1&2, 8th Cross Rd E, West Thillai Nagar, Tiruchirappalli, Tamil Nadu 620018</p></td>
+      
+      </tr>
+      <tr>
+        <td> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d501613.4884284702!2d78.28957957030521!3d10.822377600000012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baaf513c1cb4f75%3A0x5e46a1fbf61af6e3!2sFriends%20Blood%20Bank!5e0!3m2!1sen!2sin!4v1668428669582!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </td>
+       <td><p style="color:white">Friends Blood Bank,7C, Williams Rd, Beside sona mina theatre, Melapudur, Cantonment, Tiruchirappalli, Tamil Nadu 620001</p> </td>    
+    </tr>
+      <tr>
+        <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d501613.4884284702!2d78.28957957030521!3d10.822377600000012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baab9c3697727ff%3A0xe78da4fc9470b8df!2sSenthur%20Murugan%20Blood%20bankAnd%20Its%20Components!5e0!3m2!1sen!2sin!4v1668428765590!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </td>
+       <td> <p style="color:white">Senthur Murugan Blood bankAnd Its Components, No23/3087, Tamil Nadu 613007</p></td>
+    </tr>
+      <tr>
+        <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249422.8596495789!2d79.33020443388207!3d11.255494585406222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a54e19d8f1de4ef%3A0xbc5f3b2f43a97973!2sEmergency%20BLOOD%20Donors%20Communication%20Centre!5e0!3m2!1sen!2sin!4v1668428864587!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </td>
+     <td> <p style="color:white">Emergency BLOOD Donors Communication Centre, Sattanathapuram, Sirkali, Tamil Nadu 609110</p></td>
+    </tr>
+      <tr>
+        <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42228.837261938635!2d79.71651035150005!3d11.736970248662113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a54988d94a67cfb%3A0xaae95d70f14632df!2sHi%20Tech%20Blood%20Bank%20And%20Research%20Foundation!5e0!3m2!1sen!2sin!4v1668428955115!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </td>
+        <td><p style="color:white">Hi Tech Blood Bank And Research Foundation, No. 2, Chinnappa Mudali Street, Vilvanagar, Manjakuppam, Cuddalore, Tamil Nadu 607001</p>
+        </td>
+        </tr>
+      <tr>
+        <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42228.837261938635!2d79.71651035150005!3d11.736970248662113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a54988e67f92917%3A0xe54f653ba9481197!2sBlood%20Donor%20Association%20Blood%20Bank!5e0!3m2!1sen!2sin!4v1668429053515!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        
+        </td>
+        <td><p style="color:white">Blood Donor Association Blood Bank, Government Hospital, Hospital Rd, Manjakuppam, Cuddalore, Tamil Nadu 607001</p></td>
+    </tr>
+    </table>
+
+
+
+
+   
+         
+    </body>
+  </html>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js">
+ 
+    
+    </script>
+    
+</body1>
+</html>

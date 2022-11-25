@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en"  dir="ltr">
+<head>
+
+    <title>Plasma Donor Application</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style2.css')}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   
+    <style>
+      table {
+        margin-top: 100px;
+        margin-left: 100px;
+        margin-right: 100px;
+        background:linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+
+      }
+      table td {
+        padding: 50px;
+      }
+    </style>
+
+
+</head>
+<body1 >
+  <header>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="menu">
+              <ul>
+                <li><a href="/">HOME</a></li>
+                <li><a href="{{url_for("about")}}">ABOUT</a></li>
+                <li><a href="{{url_for("reques")}}">REQUEST</a></li>
+                <li><a href="{{url_for("donor")}}">DONATE</a></li>
+                <li><a href="{{url_for("loginn")}}">LOGIN</a></li>
+              </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type To text">
+                <a href="#"> <button class="btn">Search</button></a>
+            </div>
+
+        </div> 
+    </header>
+    <body>
+    <h2>Nearest Plasma Donation Centre!!!</h2>
+    <table>
+      <tr>
+        <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d577189.4097810277!2d77.95791155712556!3d9.853461735035518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c521564311b9%3A0xa3ea5d765051cf0b!2sVelammal%20Medical%20College%20Hospital%20And%20Research%20Institute%20Blood%20Bank!5e0!3m2!1sen!2sin!4v1668427607611!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </td>
+        <td style="color:white"><p>Velammal Medical College Hospital And Research Institute Blood Bank Chinthamani, Tamil Nadu 625009</p>      
+      </tr>
+      <tr>
+        <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d577189.4097810277!2d77.95791155712556!3d9.853461735035518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c597c0f47325%3A0x48507eace12028ed!2sMadurai%20Voluntary%20Blood%20Bank%20%26%20Research%20Centre!5e0!3m2!1sen!2sin!4v1668427662999!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </td>
+       <td style="color:white"><p>Madurai Voluntary Blood Bank & Research Centre 42, Kakkan St, Shenoy Nagar, Madurai, Tamil Nadu 625002</p>  </td>    
+    </tr>
+      <tr>
+        <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248842.05120153548!2d79.96449967584223!3d12.961800500000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52675d4c7c139d%3A0xf5d36b50e6964dba!2sThe%20Tamil%20Nadu%20Dr.%20Mgr%20Medical%20University%20Blood%20Bank!5e0!3m2!1sen!2sin!4v1668429242644!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </td>
+       <td style="color:white"> <p>Sivan Blood Bank,Star park kalyana Mahal Road, 278, 1st East Main Rd, Anna Nagar, Madurai, Tamil Nadu 625020</p></td>
+    </tr>
+      <tr>
+        <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d577189.4097810277!2d77.95791155712556!3d9.853461735035518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c5a48ee4b947%3A0xd6a2c58d8c427326!2sSivan%20Blood%20Bank!5e0!3m2!1sen!2sin!4v1668427806733!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </td>
+     <td style="color:white"> <p>Life Line Blood Bank Component & Research Centre,3rd floor, Sudharson Hospitals, 4, Puthumaipithan Veethi, Kailash Nagar, Vannarpettai, Tirunelveli, Tamil Nadu 627003</p> </td>
+    </tr>
+      <tr>
+        <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1009560.584123526!2d76.73130860304664!3d8.729853654420547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b04118c628298f7%3A0x82f0bbc4ceae1db2!2sLife%20Line%20Blood%20Bank%20Component%20%26%20Research%20Centre!5e0!3m2!1sen!2sin!4v1668427859543!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </td>
+        <td style="color:white"><p>HELPLINE BLOOD CENTRE & COMPONENT CENTRE,23-C, West Great Cotton Road, Shanmugapuram, Thoothukudi, Tamil Nadu 628001</p></td>
+        </tr>
+      <tr>
+        <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1958657.0405585049!2d77.13461360636684!3d10.469363664450096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00aa5ef147c4e7%3A0xd497e2b6a39e4c0f!2sDindigul%20Blood%20Bank!5e0!3m2!1sen!2sin!4v1668428011781!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </td>
+        <td style="color:white"><p>Dindigul Blood Bank,28/2, Veppan Thoppu Street, Palani Rd, Dindigul, Tamil Nadu 624001</p></td>
+    </tr>
+    </table>
+
+
+   
+        
+          
+        
+        
+        
+    </body>
+  </html>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js">
+ 
+    
+    </script>
+<script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "dd6e4126-85e3-4df8-a97b-18c4afe5213e", // The ID of this integration.
+    region: "eu-gb", // The region your integration is hosted in.
+    serviceInstanceID: "6dd6aee3-6aac-4af4-a77d-1f7757a5a1ed", // The ID of your service instance.
+    onLoad: function(instance) { instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+</body1>
+</html>
